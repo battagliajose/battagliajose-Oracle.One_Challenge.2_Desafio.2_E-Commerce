@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20vh;
+    height: 115px;
+}
+
+.header__contenido, .header__busqueda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__contenido {
+    width: 55%;
+}
+
+.header__busqueda__input {
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem;
+    width: 25vw;
+}
+
+.header__busqueda__input::placeholder {
+    color: #A2A2A2;
+}
+
+.header__busqueda__botonLupa {
+    position: relative;
+    right: 1.7rem;
+    transition: all .3s;
+}
+
+.header__busqueda__botonLupa:hover {
+    transform: scale(1.1);
+}
+
+.header__botonLogin {
+    border: 1px solid #2A7AE4;
+    width: fit-content;
+    padding: 0.8rem 4rem;
+    color: #2A7AE4;
+    background-color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.header__botonLogin:hover {
+    transform: scale(1.1);
+    color: #0b4899;
+}

@@ -1,0 +1,49 @@
+/*font-family: 'Raleway', sans-serif;*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: url("../img/banner/banner.jpg") no-repeat center;
+    background-size: cover;
+   
+    box-sizing: border-box;
+    padding: 0 20vh;
+
+    width: 100vw;
+    height: 50vh;
+}
+
+.banner__container {
+    height: 60%;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    color: white;
+}
+
+.banner__titulo {
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+.banner__subtitulo {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.botonAzulyBco {
+    border: none;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+    width: fit-content;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.banner__botonConsolas:hover {
+    transform: scale(1.1);
+}
