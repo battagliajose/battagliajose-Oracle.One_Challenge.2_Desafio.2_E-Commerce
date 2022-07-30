@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAF2FD;
+    
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 20vh;
+}
+
+.footer__container__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer__container__contacto form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.developerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 15vh;
+}
