@@ -2,3 +2,32 @@ html {
     background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
 }
+
+.botonAzulyBco {
+    border: none;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+    width: fit-content;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.botonAzulyBco:hover {
+    transform: scale(1.1);
+}
+
+.input {
+    border: none;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.input::placeholder {
+    color:#A2A2A2;
+}
+
+.input:focus {
+    border-bottom: 2px solid lightblue;
+}

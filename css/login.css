@@ -1,0 +1,30 @@
+.login {
+    background-color: #F5F5F5;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+.login h2 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.login input {
+    width: 25vw;
+    height: 3rem;
+}
+
+.login button {
+    width: 25vw;
+}

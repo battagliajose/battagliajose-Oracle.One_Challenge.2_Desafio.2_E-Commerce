@@ -34,16 +34,3 @@
     font-weight: 700;
     font-size: 1.3rem;
 }
-
-.botonAzulyBco {
-    border: none;
-    color: #FFFFFF;
-    background-color: #2A7AE4;
-    width: fit-content;
-    padding: 1rem;
-    transition: all 0.3s;
-}
-
-.banner__botonConsolas:hover {
-    transform: scale(1.1);
-}
