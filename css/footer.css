@@ -9,18 +9,57 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 3rem 20vh;
+    height: 30vh;
 }
 
 .footer__container__menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.footer__container__contacto form {
+.footer__container__contacto {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
 
+.footer__container__contacto_nombre {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__container__contacto p {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.footer__container__contacto label {
+    background-color: white;
+    border: 1px solid black;
+    color: #A2A2A2;
+    border: none;
+    padding: .5rem;
+    font-size: .8rem;
+    padding-bottom: 0;
+}
+
+.footer__container__contacto input {
+    border: none;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    outline: none;
+}
+
+.footer__container__contacto textarea {
+    border: none;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    outline: none;
+    height: 30%;
+    resize: none;
 }
 
 .developerInfo {
