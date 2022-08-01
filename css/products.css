@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 6rem 20vh;
+    margin: 3rem 20vh;
 }
 
 .productsContainer__header {
@@ -31,10 +31,18 @@
 .productsContainer__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .productsContainer__items__item {
     width: 12vw;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.productsContainer__items__item:nth-child(6n) {
+    margin-right: 0;
 }
 
 .productsContainer__items__item img {
@@ -54,4 +62,3 @@
 .productsContainer__items__item p:nth-child(3) {
     font-weight: 700;
 }
-
