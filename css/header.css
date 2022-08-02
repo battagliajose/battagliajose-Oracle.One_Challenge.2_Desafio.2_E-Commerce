@@ -38,16 +38,4 @@ header {
     transform: scale(1.1);
 }
 
-.header__botonLogin {
-    border: 1px solid #2A7AE4;
-    width: fit-content;
-    padding: 0.8rem 4rem;
-    color: #2A7AE4;
-    background-color: #FFFFFF;
-    transition: all 0.3s;
-}
 
-.header__botonLogin:hover {
-    transform: scale(1.1);
-    color: #0b4899;
-}

@@ -31,3 +31,17 @@ html {
 .input:focus {
     border-bottom: 2px solid lightblue;
 }
+
+.botonBco {
+    border: 1px solid #2A7AE4;
+    width: auto;
+    padding: 0.8rem 4rem;
+    color: #2A7AE4;
+    background-color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.botonBco:hover {
+    transform: scale(1.1);
+    color: #0b4899;
+}

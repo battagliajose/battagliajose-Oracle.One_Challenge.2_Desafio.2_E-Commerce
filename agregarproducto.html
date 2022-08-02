@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="img/header/joystick.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +17,12 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/agregarproducto.css">
 
-    <title>AluraGeek Login</title>
+    <title>AluraGeek - Agregar Producto</title>
 </head>
 
 <body>
-    
     <header>
         <div class="header__contenido">
             <img class="header__logoAlura" src="img/header/logo_alurageek.png" alt="Logo AluraGeek">
@@ -31,16 +32,25 @@
                     <img id="botonLupa" class="header__busqueda__botonLupa"src="img/header/lupa.png" alt="Lupa">
                 </div>
             </div>
+            <button class="botonBco">Menu Administrador</button>
         </div>
     </header>
 
     <main>
-        <section class="login">
-            <form action="">
-                <h2>Iniciar Sesión</h2>
-                <input class="input" type="text" placeholder="Escriba su correo electronico">
-                <input class="input" type="text" placeholder="Escriba su contraseña">
-                <button class="botonAzulyBco">Entrar</button>
+        <section class="agregarProducto">
+            <form class="agregarProducto__container">
+                <h1>Agregar nuevo producto</h1>
+                <label for="urlImagen">URL de imagen</label>
+                <input id="urlImagen" class="input" type="text">
+                <label for="categoria">Categoria</label>
+                <input id="categoria" class="input" type="text">
+                <label for="nombreProducto">Nombre del producto</label>
+                <input id="nombreProducto" class="input" type="text">
+                <label for="precioProducto">Precio del producto</label>
+                <input id="precioProducto" class="input" type="text">
+                <label for="descripcionProducto" >Descripción del producto</label>
+                <input id="descripcionProducto" class="input" type="text">
+                <button class="botonAzulyBco">Agregar Producto</button>
             </form>
         </section>
     </main>
@@ -75,6 +85,5 @@
             <p>07-2022</p>
         </div>
     </footer>
-
 </body>
 </html>
