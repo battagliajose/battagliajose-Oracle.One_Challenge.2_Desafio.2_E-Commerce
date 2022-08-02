@@ -1,0 +1,36 @@
+.producto {
+    background-color: #E5E5E5;
+}
+
+.producto__producto {
+    margin: 0 20vh;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto__producto__imagen{
+    width: 110vw;
+    height: 60vh;
+    background: url("../img/starwars/sw_1_big.png") no-repeat center;
+}
+
+.producto__producto__detalle {
+    width: 100%;
+    color: #464646;
+}
+
+.producto__producto__detalle h1 {
+    font-size: 3rem;
+}
+
+.producto__producto__detalle h4 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.productsContainer {
+    margin-bottom: 0 !important;
+}
+
