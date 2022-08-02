@@ -38,4 +38,11 @@ header {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        margin: 0 10vh;
+        height: 80px;
+    }
+}
+
 

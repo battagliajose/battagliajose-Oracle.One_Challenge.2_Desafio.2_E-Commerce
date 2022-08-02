@@ -62,3 +62,34 @@
 .productsContainer__items__item p:nth-child(3) {
     font-weight: 700;
 }
+
+.productsContainer__header a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.productsContainer__header a:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1100px) {
+    .productsContainer {
+        margin: 3rem 10vh;;
+    }
+
+    .productsContainer__items__item {
+        width: 20vw;
+        margin-right: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .productsContainer__items__item:nth-child(5), .productsContainer__items__item:nth-child(6) {
+        display: none;
+    }
+
+    .productsContainer__header h2 {
+        font-size: 1.5rem;
+    }
+}

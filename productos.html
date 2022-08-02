@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="css/allproducts.css">
     <link rel="stylesheet" href="css/footer.css">
 
+    <script src="js/productos.js" defer></script>
+
     <title>AluraGeek - Productos</title>
 </head>
 <body>
     <header>
         <div class="header__contenido">
-            <img class="header__logoAlura" src="img/header/logo_alurageek.png" alt="Logo AluraGeek">
+            <a href="index.html"><img class="header__logoAlura" src="img/header/logo_alurageek.png" alt="Logo AluraGeek"></a>
             <div class="header__busqueda">
                 <input class="header__busqueda__input" type="text" placeholder="¿Que desea buscar?">
                 <div class="header__busqueda__lupa">
@@ -40,7 +42,7 @@
                 <div class="productsContainer__header">
                     <h2>Todos los productos</h2>
                     <div>
-                        <button class="botonAzulyBco">Agregar Producto</button>
+                        <button id="btnAgregarProducto" class="botonAzulyBco">Agregar Producto</button>
                     </div>
                 </div>
                 <div class="productsContainer__items">
