@@ -13,8 +13,9 @@ form.addEventListener("submit", (event) =>{
     
     productosServices.crearProducto(name, section, name, price, description, imageUrl)
     .then( respuesta => {
-        window.location.href = "/index.html"
+        window.location.href = "/index.html";
         alert("Producto Creado!");
+    }).catch(error => {
+        console.log(error)
     });
-
 });
