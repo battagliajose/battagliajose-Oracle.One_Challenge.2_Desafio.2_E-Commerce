@@ -1,12 +1,17 @@
 {
     "usuarios": [
-      { "id": 1, "nombre": "josé", "clave": "jsonserver", "admin":"false" },
-      { "id": 2, "nombre": "invitado", "clave": "invitado", "admin":"false" },
-      { "id": 2, "nombre": "administrador", "clave": "mainadmin", "admin":"true" }
+      { "id": 1, "name": "josé", "pass": "jsonserver", "admin":"false" },
+      { "id": 2, "name": "invitado", "pass": "invitado", "admin":"false" },
+      { "id": 2, "name": "administrador", "pass": "mainadmin", "admin":"true" }
     ],
     "productos": [
-      { "id": 1, "nombre": "Producto XYZ", "precio": 60, "descripcion":"Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam", "imageurl":"./img/starwars/sw_1_big.png" },
-      { "id": 2, "nombre": "Producto XYZ2", "precio": 60, "descripcion":"Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam", "imageurl":"./img/starwars/sw_2.png" }
-      
+      { "id": 1, "name": "Producto XYZ", "category":"starwars", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam", "imageurl":"../../img/starwars/sw_1.png" },
+      { "id": 2, "name": "Producto XYZ", "category":"starwars", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam", "imageurl":"../../img/starwars/sw_2.png" },
+      { "id": 3, "name": "Producto XYZ", "category":"starwars", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam", "imageurl":"../../img/starwars/sw_3.png" },
+      { "id": 4, "name": "Producto XYZ", "category":"starwars", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam", "imageurl":"../../img/starwars/sw_4.png" },
+      { "id": 5, "name": "Producto XYZ", "category":"starwars", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam", "imageurl":"../../img/starwars/sw_5.png" },
+      { "id": 6, "name": "Producto XYZ", "category":"starwars", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam", "imageurl":"../../img/starwars/sw_6.png" }
     ]
+
+
 }

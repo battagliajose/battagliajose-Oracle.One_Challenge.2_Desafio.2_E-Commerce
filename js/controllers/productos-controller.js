@@ -1,11 +1,7 @@
 import { productosServices } from "../services/productos-servicios.js";
 
-let productos = productosServices.listaProductos()
-
-console.log(productos);
-
-const agregarProducto = (name, price, imageUrl) => {
-    const productsList = document.querySelector("#productsList");
+const crearHTMLProducto = (name, price, imageUrl) => {
+    //crea html de card de productos.
     const card = document.createElement("div");
 
     card.classList.add("productsContainer__items__item")
@@ -16,9 +12,25 @@ const agregarProducto = (name, price, imageUrl) => {
 
     card.innerHTML = contenido;
 
+    return card;
+};
+
+const agregarProducto = (name, price, imageUrl) => {
+    //Agrega productos al listado.
+    const card = crearHTMLProducto(name, price, imageUrl);
+    const productsList = document.querySelector("[data-productsList]");
     productsList.appendChild(card);
 }
 
-agregarProducto("PRUEBA", 100, "../../img/starwars/sw_1.png");
-agregarProducto("PRUEBA", 200, "../../img/starwars/sw_2.png");
-agregarProducto("PRUEBA", 300, "../../img/starwars/sw_3.png");
+const render = async () => {
+    try {
+        const listaProductos = await productosServices.listaProductos();
+        listaProductos.forEach(p => {
+            agregarProducto(p.name, p.price, p.imageurl);
+        });
+    } catch (error) {
+        console.log(error);
+    };
+};
+
+render();
