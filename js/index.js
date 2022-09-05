@@ -10,3 +10,7 @@ inputFilter.addEventListener("input", function () {
 btnLogin.addEventListener("click", function() {
     window.open("login.html","_self");
 });
+
+productsController.render(null, 6);
+
+productsController

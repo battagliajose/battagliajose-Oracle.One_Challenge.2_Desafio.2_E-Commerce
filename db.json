@@ -25,5 +25,6 @@
       { "id": 16, "name": "Control y consola XYZ", "section":"Diversos", "alt":"Producto Diversos4", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_4.png" },
       { "id": 17, "name": "Control y consola XYZ", "section":"Diversos", "alt":"Producto Diversos5", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_5.png" },
       { "id": 18, "name": "Producto XYZ", "section":"Diversos", "alt":"Producto Diversos6", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_6.png" }
+      
     ]
 }

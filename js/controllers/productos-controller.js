@@ -54,8 +54,9 @@ const agregarEncabezado = (name) => {
     productsSection.appendChild(headerDiv);
 };
 
-const render = async (filter = null) => {
+const render = async (filter = null, maxItems = 1000) => {
     try {
+        let i = 0;
         let listaProductos = await productosServices.listaProductos();
         if (filter != null) {
             listaProductos = listaProductos.filter(p => {
@@ -70,11 +71,29 @@ const render = async (filter = null) => {
         listaEncabezados.forEach(e => {
             agregarEncabezado(e);
             listaProductos.forEach(p => {
-                if(p.section == e) {
+                if(p.section == e && i < maxItems) {
                     agregarProducto(p.name, p.price, p.imageurl, p.alt, p.section);
+                    i++
                 }
             });
+            i = 0;
         });
+
+    } catch (error) {
+        console.log(error);
+    };
+};
+
+const renderAll = async () => {
+    try {
+        let listaProductos = await productosServices.listaProductos();
+        
+        const productsList = document.querySelector(`[data-productsList]`);
+
+            listaProductos.forEach(p => {
+                const card = crearHTMLProducto(p.name, p.price, p.imageurl, p.alt, p.section);
+                productsList.appendChild(card);
+            });
 
     } catch (error) {
         console.log(error);
@@ -93,8 +112,7 @@ const listaSecciones = (listaProductos) => {
     return secciones;
 };
 
-render();
-
 export const productsController = {
-    render
+    render,
+    renderAll
 }
