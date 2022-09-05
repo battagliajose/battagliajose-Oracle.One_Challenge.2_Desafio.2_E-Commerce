@@ -38,18 +38,18 @@
 
     <main>
         <section class="agregarProducto">
-            <form class="agregarProducto__container">
+            <form class="agregarProducto__container" data-form>
                 <h1>Agregar nuevo producto</h1>
                 <label for="urlImagen">URL de imagen</label>
-                <input id="urlImagen" class="input" type="text">
+                <input id="urlImagen" class="input" type="text" required data-imageurl>
                 <label for="categoria">Categoria</label>
-                <input id="categoria" class="input" type="text">
+                <input id="categoria" class="input" type="text" required data-section>
                 <label for="nombreProducto">Nombre del producto</label>
-                <input id="nombreProducto" class="input" type="text">
+                <input id="nombreProducto" class="input" type="text" required data-name>
                 <label for="precioProducto">Precio del producto</label>
-                <input id="precioProducto" class="input" type="text">
+                <input id="precioProducto" class="input" type="text" required data-price>
                 <label for="descripcionProducto" >Descripción del producto</label>
-                <input id="descripcionProducto" class="input" type="text">
+                <input id="descripcionProducto" class="input" type="text" required data-description>
                 <button class="botonAzulyBco">Agregar Producto</button>
             </form>
         </section>
@@ -85,5 +85,7 @@
             <p>07-2022</p>
         </div>
     </footer>
+
+    <script type="module" src="./js/controllers/crear-producto-controller.js"></script>
 </body>
 </html>

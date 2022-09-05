@@ -1,30 +1,195 @@
 {
-    "usuarios": [
-      { "id": 1, "name": "josé", "pass": "jsonserver", "admin":"false" },
-      { "id": 2, "name": "invitado", "pass": "invitado", "admin":"false" },
-      { "id": 2, "name": "administrador", "pass": "mainadmin", "admin":"true" }
-    ],
-    "productos": [
-      { "id": 1, "name": "Producto XYZ", "section":"Star Wars", "alt":"Producto StarWars1", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/starwars/sw_1.png" },
-      { "id": 2, "name": "Producto XYZ", "section":"Star Wars", "alt":"Producto StarWars2", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/starwars/sw_2.png" },
-      { "id": 3, "name": "Producto XYZ", "section":"Star Wars", "alt":"Producto StarWars3", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/starwars/sw_3.png" },
-      { "id": 4, "name": "Producto XYZ", "section":"Star Wars", "alt":"Producto StarWars4", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/starwars/sw_4.png" },
-      { "id": 5, "name": "Producto XYZ", "section":"Star Wars", "alt":"Producto StarWars5", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/starwars/sw_5.png" },
-      { "id": 6, "name": "Producto XYZ", "section":"Star Wars", "alt":"Producto StarWars6", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/starwars/sw_6.png" },
-
-      { "id": 7, "name": "Control XYZ", "section":"Consolas", "alt":"Producto Consolas1", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/consolas/con_1.png" },
-      { "id": 8, "name": "Control y consolaXYZ", "section":"Consolas", "alt":"Producto Consolas2", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/consolas/con_2.png" },
-      { "id": 9, "name": "Control XYZ", "section":"Consolas", "alt":"Producto Consolas3", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/consolas/con_3.png" },
-      { "id": 10, "name": "Consola XYZ", "section":"Consolas", "alt":"Producto Consolas4", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/consolas/con_4.png" },
-      { "id": 11, "name": "Control XYZ", "section":"Consolas", "alt":"Producto Consolas5", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/consolas/con_5.png" },
-      { "id": 12, "name": "Game Boy Color", "section":"Consolas", "alt":"Producto Consolas6", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/consolas/con_6.png" },
-
-      { "id": 13, "name": "Camisa Atari", "section":"Diversos", "alt":"Producto Diversos1", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_1.png" },
-      { "id": 14, "name": "Camisa SNES", "section":"Diversos", "alt":"Producto Diversos2", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_2.png" },
-      { "id": 15, "name": "Control y consola XYZ", "section":"Diversos", "alt":"Producto Diversos3", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_3.png" },
-      { "id": 16, "name": "Control y consola XYZ", "section":"Diversos", "alt":"Producto Diversos4", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_4.png" },
-      { "id": 17, "name": "Control y consola XYZ", "section":"Diversos", "alt":"Producto Diversos5", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_5.png" },
-      { "id": 18, "name": "Producto XYZ", "section":"Diversos", "alt":"Producto Diversos6", "price": 60.00, "description":"Voluptas voluptatum quibusdam similique.", "imageurl":"../../img/diversos/div_6.png" }
-      
-    ]
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "josé",
+      "pass": "jsonserver",
+      "admin": "false"
+    },
+    {
+      "id": 2,
+      "name": "invitado",
+      "pass": "invitado",
+      "admin": "false"
+    },
+    {
+      "id": 2,
+      "name": "administrador",
+      "pass": "mainadmin",
+      "admin": "true"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "name": "Producto XYZ",
+      "section": "Star Wars",
+      "alt": "Producto StarWars1",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/starwars/sw_1.png"
+    },
+    {
+      "id": 2,
+      "name": "Producto XYZ",
+      "section": "Star Wars",
+      "alt": "Producto StarWars2",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/starwars/sw_2.png"
+    },
+    {
+      "id": 3,
+      "name": "Producto XYZ",
+      "section": "Star Wars",
+      "alt": "Producto StarWars3",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/starwars/sw_3.png"
+    },
+    {
+      "id": 4,
+      "name": "Producto XYZ",
+      "section": "Star Wars",
+      "alt": "Producto StarWars4",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/starwars/sw_4.png"
+    },
+    {
+      "id": 5,
+      "name": "Producto XYZ",
+      "section": "Star Wars",
+      "alt": "Producto StarWars5",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/starwars/sw_5.png"
+    },
+    {
+      "id": 6,
+      "name": "Producto XYZ",
+      "section": "Star Wars",
+      "alt": "Producto StarWars6",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/starwars/sw_6.png"
+    },
+    {
+      "id": 7,
+      "name": "Control XYZ",
+      "section": "Consolas",
+      "alt": "Producto Consolas1",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/consolas/con_1.png"
+    },
+    {
+      "id": 8,
+      "name": "Control y consolaXYZ",
+      "section": "Consolas",
+      "alt": "Producto Consolas2",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/consolas/con_2.png"
+    },
+    {
+      "id": 9,
+      "name": "Control XYZ",
+      "section": "Consolas",
+      "alt": "Producto Consolas3",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/consolas/con_3.png"
+    },
+    {
+      "id": 10,
+      "name": "Consola XYZ",
+      "section": "Consolas",
+      "alt": "Producto Consolas4",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/consolas/con_4.png"
+    },
+    {
+      "id": 11,
+      "name": "Control XYZ",
+      "section": "Consolas",
+      "alt": "Producto Consolas5",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/consolas/con_5.png"
+    },
+    {
+      "id": 12,
+      "name": "Game Boy Color",
+      "section": "Consolas",
+      "alt": "Producto Consolas6",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/consolas/con_6.png"
+    },
+    {
+      "id": 13,
+      "name": "Camisa Atari",
+      "section": "Diversos",
+      "alt": "Producto Diversos1",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/diversos/div_1.png"
+    },
+    {
+      "id": 14,
+      "name": "Camisa SNES",
+      "section": "Diversos",
+      "alt": "Producto Diversos2",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/diversos/div_2.png"
+    },
+    {
+      "id": 15,
+      "name": "Control y consola XYZ",
+      "section": "Diversos",
+      "alt": "Producto Diversos3",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/diversos/div_3.png"
+    },
+    {
+      "id": 16,
+      "name": "Control y consola XYZ",
+      "section": "Diversos",
+      "alt": "Producto Diversos4",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/diversos/div_4.png"
+    },
+    {
+      "id": 17,
+      "name": "Control y consola XYZ",
+      "section": "Diversos",
+      "alt": "Producto Diversos5",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/diversos/div_5.png"
+    },
+    {
+      "id": 18,
+      "name": "Producto XYZ",
+      "section": "Diversos",
+      "alt": "Producto Diversos6",
+      "price": 60,
+      "description": "Voluptas voluptatum quibusdam similique.",
+      "imageurl": "../../img/diversos/div_6.png"
+    },
+    {
+      "name": "asdf",
+      "section": "asdf",
+      "alt": "asdf",
+      "price": "asdf",
+      "description": "asdf",
+      "imageurl": "asdf",
+      "id": 19
+    }
+  ]
 }

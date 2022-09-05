@@ -2,20 +2,29 @@ const url = "http://localhost:3000/productos"
 
 const listaProductos = () => fetch(url).then(respuesta => respuesta.json());
 
-// const listaSecciones = async () => {
-//     const listaProductos = await productosServices.listaProductos();
-//     let secciones = [];
-
-//     listaProductos.forEach(p => {
-//         if (secciones.indexOf(p.section, 0) < 0) {
-//             secciones.push(p.section);
-//         }
-//     });
-
-//     return secciones;
-// };
+const crearProducto = (name, section, alt, price, description, imageurl) => {
+    return fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({ 
+            name,
+            section,
+            alt,
+            price,
+            description,
+            imageurl
+        })
+    }).then( respuesta => {
+        if (respuesta.ok) {
+            return respuesta.body
+        }
+        throw new Error("No fue posible crear un producto");
+    })
+}
 
 export const productosServices = {
     listaProductos,
-    //listaSecciones
+    crearProducto
 }
