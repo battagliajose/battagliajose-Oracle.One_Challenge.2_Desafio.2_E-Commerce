@@ -2,6 +2,10 @@ const url = "http://localhost:3000/productos"
 
 const listaProductos = () => fetch(url).then(respuesta => respuesta.json());
 
+const getProducto = (id) => { 
+    return fetch(url + `/${id}`).then(respuesta => respuesta.json());
+};
+
 const crearProducto = (name, section, alt, price, description, imageurl) => {
     return fetch(url, {
         method: "POST",
@@ -24,7 +28,15 @@ const crearProducto = (name, section, alt, price, description, imageurl) => {
     })
 }
 
+const eliminarProducto = (id) => {
+    return fetch(`${url}/${id}`, {
+        method: "DELETE",
+    });
+};
+
 export const productosServices = {
     listaProductos,
-    crearProducto
+    crearProducto,
+    eliminarProducto,
+    getProducto
 }

@@ -1,6 +1,6 @@
 import { productosServices } from "../services/productos-servicios.js";
 
-const crearHTMLProducto = (name, price, imageUrl, alt) => {
+const crearHTMLProducto = (name, price, imageUrl, alt, id) => {
     //crea html de card de productos.
     const card = document.createElement("div");
 
@@ -8,8 +8,8 @@ const crearHTMLProducto = (name, price, imageUrl, alt) => {
     const contenido = `<img src="${imageUrl}" alt="${alt}">
     <p>${name}</p>
     <p>$ ${price}.00</p>
-    <a href="producto.html">Ver producto</a>`
-
+    <a href="producto.html?id=${id}">Ver producto</a>`
+    
     card.innerHTML = contenido;
 
     return card;
@@ -39,10 +39,10 @@ const crearHTMLEncabezado = (name) => {
     return header;
 };
 
-const agregarProducto = (name, price, imageUrl, alt, section) => {
+const agregarProducto = (name, price, imageUrl, alt, section, id) => {
     //Agrega productos al listado.
     const sectionForData = section.replaceAll(/\s/g, '_');
-    const card = crearHTMLProducto(name, price, imageUrl, alt);
+    const card = crearHTMLProducto(name, price, imageUrl, alt, id);
     const productsList = document.querySelector(`[data-productsList-${sectionForData}]`);
     productsList.appendChild(card);
 };
@@ -72,7 +72,7 @@ const render = async (filter = null, maxItems = 1000) => {
             agregarEncabezado(e);
             listaProductos.forEach(p => {
                 if(p.section == e && i < maxItems) {
-                    agregarProducto(p.name, p.price, p.imageurl, p.alt, p.section);
+                    agregarProducto(p.name, p.price, p.imageurl, p.alt, p.section, p.id);
                     i++
                 }
             });
@@ -91,7 +91,7 @@ const renderAll = async () => {
         const productsList = document.querySelector(`[data-productsList]`);
 
             listaProductos.forEach(p => {
-                const card = crearHTMLProducto(p.name, p.price, p.imageurl, p.alt, p.section);
+                const card = crearHTMLProducto(p.name, p.price, p.imageurl, p.alt, p.id);
                 productsList.appendChild(card);
             });
 

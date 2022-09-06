@@ -11,9 +11,10 @@
 }
 
 .producto__producto__imagen{
-    width: 110vw;
+    width: 70vw;
     height: 60vh;
-    background: url("../img/starwars/sw_1_big.png") no-repeat center;
+    margin-right: 5vw;
+    
 }
 
 .producto__producto__detalle {
