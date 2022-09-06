@@ -33,10 +33,22 @@ const eliminarProducto = (id) => {
         method: "DELETE",
     });
 };
+const actualizarProducto = (name, section, alt, price, description, imageurl, id) => {
+    return fetch(url + `/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ name, section, alt, price, description, imageurl })
+    })
+    .then( respuesta => console.log(respuesta))
+    .catch(err => console.log(err));
+};
 
 export const productosServices = {
     listaProductos,
     crearProducto,
     eliminarProducto,
-    getProducto
+    getProducto,
+    actualizarProducto
 }

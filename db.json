@@ -183,22 +183,31 @@
       "imageurl": "../../img/diversos/div_6.png"
     },
     {
-      "name": "Chica",
+      "name": "Tenista",
       "section": "Pruebas",
-      "alt": "Chica",
-      "price": "10000",
+      "alt": "Tenista",
+      "price": "100",
       "description": "Chica de MSN.NET",
       "imageurl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11tjrz.img?h=416&w=799&m=6&q=60&u=t&o=f&l=f&x=503&y=190",
       "id": 19
     },
     {
+      "name": "Soda Stereo",
+      "section": "Musica",
+      "alt": "Soda Stereo",
+      "price": "100",
+      "description": "Soda Stereo.",
+      "imageurl": "https://www.latercera.com/resizer/zY5YJ7QLhOK1pRcvhuNcI0kap7M=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UAHNHNLVJVEPPC2HK3JW5IEIV4.jpg",
+      "id": 27
+    },
+    {
       "name": "Freddie!",
-      "section": "Pruebas",
+      "section": "Musica",
       "alt": "Freddie!",
-      "price": "9999999999999999999",
+      "price": "100",
       "description": "Freddie!",
       "imageurl": "https://th.bing.com/th/id/R.b4bc7dbef207dacefc7cd61f766d1e9e?rik=XMcWdfJOlzOzEw&pid=ImgRaw&r=0",
-      "id": 26
+      "id": 28
     }
   ]
 }
